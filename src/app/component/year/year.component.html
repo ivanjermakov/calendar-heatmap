@@ -1,0 +1,6 @@
+<div class="year" [style.grid-template-columns]="'repeat(' + columns +', auto)'">
+    <div class="months"
+         *ngFor='let month of year!.months'>
+        <app-month [month]='month' [showLabel]="false"></app-month>
+    </div>
+</div>
