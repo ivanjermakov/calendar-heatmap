@@ -1,1 +1,6 @@
-<div class="day" [style.width]="size + 'px'" [style.height]="size + 'px'">{{day!.value}}</div>
+<div class="day"
+     [style.width]="size + 'px'" [style.height]="size + 'px'"
+     [style.color]="textColor"
+     [style.background]="color">
+    {{showDate ? day!.date.date() : ''}}
+</div>

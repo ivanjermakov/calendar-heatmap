@@ -2,6 +2,6 @@
     <div class="name" *ngIf="showLabel">{{name}}</div>
     <div class="days">
         <app-day-offset *ngFor="let day of [].constructor(offsetDays)" [size]="40"></app-day-offset>
-        <app-day *ngFor="let day of month!.days" [day]="day" [size]="40"></app-day>
+        <app-day *ngFor="let day of month!.days" [day]="day" [size]="40" [showDate]="false"></app-day>
     </div>
 </div>
